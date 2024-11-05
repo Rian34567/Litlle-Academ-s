@@ -1,0 +1,162 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(90deg, #4a90e2, #9013fe);
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para a logo */
+.logo img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+}
+
+/* Navegação */
+.navbar {
+    flex-grow: 1;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffd700; /* Cor de destaque ao passar o mouse */
+}
+
+/* Estilos principais */
+main {
+    padding: 20px;
+    background: linear-gradient(120deg, #f0f0f0, #ffffff);
+    flex-grow: 1; /* Permite que o main ocupe o espaço restante */
+}
+
+/* Seção de produtos */
+#produtos {
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Título da Seção Produtos */
+#produtos h2 {
+    font-size: 2.5em;
+    color: #4a90e2;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Lista de Produtos */
+.produtos-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+/* Estilos para cada produto */
+.produtos-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 22%;
+    max-width: 300px;
+}
+
+.produtos-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Botões de seleção de sabor */
+.scroll-button {
+    background: linear-gradient(90deg, #4a90e2, #9013fe);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.scroll-button:hover {
+    background: linear-gradient(90deg, #9013fe, #4a90e2);
+}
+
+/* Dropdown de sabores */
+.sabores {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.sabores select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Garante que o rodapé seja empurrado para o final */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}

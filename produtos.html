@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Little Academ`s</title>
+    <link rel="stylesheet" href="./Assets/CSS/produtos.css">
+    <script src="./Assets/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./Assets/imagens/Logo.jpg" alt="Logo da Empresa" />
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="quem-somos.html">Quem Somos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="orcamentos.html">Orçamentos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="produtos">
+            <h2>Produtos</h2>
+
+            <!-- Produtos -->
+            <div class="produtos-list">
+                <!-- Produto 1 -->
+                <div class="produtos-item">
+                    <img src="./Assets/imagens/whey concentrado.webp" alt="Produto 1">
+                    <button class="scroll-button" onclick="toggleSabores('produto1')">Escolher Sabor</button>
+                    <div class="sabores" id="produto1" style="display:none;">
+                        <select>
+                            <option value="chocolate">Chocolate</option>
+                            <option value="baunilha">Baunilha</option>
+                            <option value="morango">Morango</option>
+                            <option value="cookies">Cookies and Cream</option>
+                            <option value="café">Café</option>
+                            <option value="caramelo">Caramelo</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="produtos-item">
+                    <img src="./Assets/imagens/whey medium.webp" alt="Produto 2">
+                    <button class="scroll-button" onclick="toggleSabores('produto2')">Escolher Sabor</button>
+                    <div class="sabores" id="produto2" style="display:none;">
+                        <select>
+                            <option value="chocolate">Chocolate</option>
+                            <option value="baunilha">Baunilha</option>
+                            <option value="morango">Morango</option>
+                            <option value="caramelo">Caramelo</option>
+                            <option value="doce-de-leite">Doce de Leite</option>
+                            <option value="frutas-vermelhas">Frutas Vermelhas</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="produtos-item">
+                    <img src="./Assets/imagens/growth-whey-pronto-growth-supplements.webp" alt="Produto 3">
+                    <button class="scroll-button" onclick="toggleSabores('produto3')">Escolher Sabor</button>
+                    <div class="sabores" id="produto3" style="display:none;">
+                        <select>
+                            <option value="chocolate">Chocolate</option>
+                            <option value="baunilha">Baunilha</option>
+                            <option value="morango">Morango</option>
+                            <option value="pistache">Pistache</option>
+                            <option value="cappuccino">Cappuccino</option>
+                            <option value="biscoito">Biscoito</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="produtos-item">
+                    <img src="./Assets/imagens/Creatina.webp" alt="Produto 4">
+                    <button class="scroll-button" onclick="toggleSabores('produto4')">Escolher Sabor</button>
+                    <div class="sabores" id="produto4" style="display:none;">
+                        <select>
+                            <option value="frutas">Frutas</option>
+                            <option value="citrus">Citrus</option>
+                            <option value="tropical">Tropical</option>
+                            <option value="limão">Limão</option>
+                            <option value="laranja">Laranja</option>
+                            <option value="abacaxi">Abacaxi</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/silva_hendryw/" target="_blank">
+                <img src="./Assets/svg/instagram-svgrepo-com.svg" alt="Instagram">
+            </a>
+
+            <a href="https://github.com/Hendryw06" target="_blank" aria-label="GitHub">
+                <img src="./Assets/svg/github-142-svgrepo-com.svg" alt="GitHub">
+            </a>
+        </div>
+        <p>© 2024 Little Academ's. Todos os direitos reservados. Aplicação Web feita por Hendryw e Rian. Praça Frei Eugênio, R. São Benedito, 85, Uberaba - MG, 38010-280.</p>
+    </footer>
+</body>
+</html>

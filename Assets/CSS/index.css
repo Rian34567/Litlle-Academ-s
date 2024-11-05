@@ -1,0 +1,218 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(90deg, #4a90e2, #9013fe);
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para a logo */
+.logo img {
+    max-width: 150px;
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Navegação */
+.navbar {
+    flex-grow: 1; /* Faz a navegação ocupar o espaço restante */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffd700; /* Cor de destaque ao passar o mouse */
+}
+
+/* Menu hamburguer */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin: 3px 0;
+}
+
+/* Estilos principais */
+main {
+    padding: 20px;
+    background: linear-gradient(120deg, #f0f0f0, #ffffff);
+}
+
+section#home {
+    text-align: center;
+    padding: 20px;
+}
+
+.imagem-retangular {
+    width: 600px; /* Largura do retângulo */
+    height: 250px; /* Altura do retângulo */
+    overflow: hidden; /* Esconde partes da imagem que saem do contêiner */
+    border-radius: 10px; /* Bordas arredondadas, se desejado */
+    margin: 10px auto; /* Centraliza o retângulo horizontalmente */
+    display: flex; /* Para centralizar a imagem dentro */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background: #f0f0f0; /* Fundo opcional para o contêiner */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra padrão */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transições suaves */
+}
+
+.imagem-retangular:hover {
+    transform: translateY(-5px); /* Eleva o retângulo ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais intensa ao passar o mouse */
+}
+
+.imagem-retangular img {
+    width: 100%; /* A imagem ocupará 100% da largura do contêiner */
+    height: 100%; /* A imagem ocupará 100% da altura do contêiner */
+    object-fit: cover; /* Faz a imagem cobrir o espaço do retângulo */
+    transition: transform 0.3s; /* Transição para efeito de hover, se desejado */
+}
+
+.imagem-retangular:hover img {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+
+
+
+h2 {
+    margin: 20px 0; /* Margem para o título dos destaques */
+}
+
+/* Container dos destaques */
+.destaques-container {
+    display: flex; /* Exibe em linha */
+    justify-content: center; /* Centraliza os itens */
+    flex-wrap: wrap; /* Permite quebra de linha */
+}
+
+.destaque-item {
+    background: #fff; /* Fundo branco */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin: 10px; /* Margem entre os itens */
+    padding: 15px; /* Espaçamento interno */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 200px; /* Largura fixa para os itens */
+    text-align: center; /* Centraliza o texto */
+}
+
+.destaque-item img {
+    width: 100%; /* A imagem ocupará 100% da largura do contêiner */
+    height: 150px; /* Define uma altura fixa para as imagens */
+    object-fit: cover; /* Faz a imagem cobrir o espaço, mantendo a proporção */
+    border-radius: 5px; /* Bordas arredondadas para a imagem */
+}
+
+/* Mapa */
+.mapa {
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Botão CTA */
+.cta {
+    background: linear-gradient(90deg, #4a90e2, #9013fe);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.cta:hover {
+    background: linear-gradient(90deg, #9013fe, #4a90e2);
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+/* Tamanho dos SVGs */
+.social-icons img {
+    width: 40px; 
+    height: 40px; 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .banner {
+        height: 200px; /* Ajusta a altura do banner em telas menores */
+    }
+
+    .destaques-container {
+        flex-direction: column; /* Exibe os itens em coluna em telas menores */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .destaque-item {
+        width: auto; /* Largura automática em telas menores */
+    }
+}
